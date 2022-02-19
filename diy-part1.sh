@@ -10,9 +10,11 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+git reset 03f90cdbd7279159e176180a58f6023d1914f0d7
+
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
